@@ -1,0 +1,111 @@
+{
+  "_args": [
+    [
+      "@stdlib/utils-noop@0.0.8",
+      "C:\\Users\\bryan\\Downloads\\File-system"
+    ]
+  ],
+  "_from": "@stdlib/utils-noop@0.0.8",
+  "_id": "@stdlib/utils-noop@0.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-rDCM7W7T9J5H/98n01v+mk/cnbw6mErVg0gK2Rwgora0o1/roJjlRRM0lcvz2Csc+jh5dyO+A26L0y4yyBs/yg==",
+  "_location": "/@stdlib/utils-noop",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@stdlib/utils-noop@0.0.8",
+    "name": "@stdlib/utils-noop",
+    "escapedName": "@stdlib%2futils-noop",
+    "scope": "@stdlib",
+    "rawSpec": "0.0.8",
+    "saveSpec": null,
+    "fetchSpec": "0.0.8"
+  },
+  "_requiredBy": [
+    "/@stdlib/cli-ctor"
+  ],
+  "_resolved": "https://registry.npmjs.org/@stdlib/utils-noop/-/utils-noop-0.0.8.tgz",
+  "_spec": "0.0.8",
+  "_where": "C:\\Users\\bryan\\Downloads\\File-system",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "dependencies": {},
+  "description": "Function which does nothing.",
+  "devDependencies": {
+    "@stdlib/assert-is-undefined": "^0.0.x",
+    "@stdlib/bench": "^0.0.x",
+    "istanbul": "^0.4.1",
+    "tap-spec": "5.x.x",
+    "tape": "git+https://github.com/kgryte/tape.git#fix/globby"
+  },
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  },
+  "homepage": "https://stdlib.io",
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "noop",
+    "nop",
+    "callback",
+    "clbk",
+    "cb",
+    "function",
+    "fcn"
+  ],
+  "license": "Apache-2.0",
+  "main": "./lib",
+  "name": "@stdlib/utils-noop",
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-noop.git"
+  },
+  "scripts": {
+    "benchmark": "make benchmark",
+    "examples": "make examples",
+    "test": "make test",
+    "test-cov": "make test-cov"
+  },
+  "types": "./docs/types",
+  "version": "0.0.8"
+}

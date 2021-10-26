@@ -1,0 +1,69 @@
+{
+  "_from": "md-to-site",
+  "_id": "md-to-site@1.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-7dFbyLYkSHW55I4Bz6ZaaD7UYWDoN7HKTRmBERBoUaVSLjO4ZCBnt9Lrru4PaS1RkpJOzpQpPEJ6SUCh4Fm9cw==",
+  "_location": "/md-to-site",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "md-to-site",
+    "name": "md-to-site",
+    "escapedName": "md-to-site",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/md-to-site/-/md-to-site-1.5.0.tgz",
+  "_shasum": "b09b5f4952f3f61767f0f645c422eae876ffff21",
+  "_spec": "md-to-site",
+  "_where": "/mnt/c/Users/bryan/Downloads/File-system",
+  "author": {
+    "name": "Daniele Favi",
+    "email": "info@danielefavi.com",
+    "url": "http://www.danielefavi.com"
+  },
+  "bin": {
+    "md-to-site": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/danielefavi/md-to-site/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "marked": "^0.8.2",
+    "node-sass": "^4.14.1",
+    "striptags": "^3.1.1"
+  },
+  "deprecated": false,
+  "description": "Create a static HTML website from a folder containing markdown files.",
+  "homepage": "https://github.com/danielefavi/md-to-site#readme",
+  "keywords": [
+    "markdown",
+    "markup",
+    "md",
+    "html",
+    "static",
+    "site",
+    "directory",
+    "folder"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "md-to-site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielefavi/md-to-site.git"
+  },
+  "scripts": {
+    "compile": "node-sass ./assets/layouts/default/style.scss ./assets/css/style.css --output-style compressed",
+    "test": "echo \"Error: no test specified\"",
+    "watch": "node-sass ./assets/layouts/default/style.scss ./assets/layouts/default/dist/css/style.css --watch --output-style compressed"
+  },
+  "version": "1.5.0"
+}

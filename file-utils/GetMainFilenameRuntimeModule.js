@@ -11,34 +11,34 @@ const Template = require("../Template");
 /** @typedef {import("../Compilation")} Compilation */
 
 class GetMainFilenameRuntimeModule extends RuntimeModule {
-	/**
-	 * @param {string} name readable name
-	 * @param {string} global global object binding
-	 * @param {string} filename main file name
-	 */
-	constructor(name, global, filename) {
-		super(`get ${name} filename`);
-		this.global = global;
-		this.filename = filename;
-	}
+  /**
+   * @param {string} name readable name
+   * @param {string} global global object binding
+   * @param {string} filename main file name
+   */
+  constructor(name, global, filename) {
+    super(`get ${name} filename`);
+    this.global = global;
+    this.filename = filename;
+  }
 
-	/**
-	 * @returns {string} runtime code
-	 */
-	generate() {
-		const { global, filename, compilation, chunk } = this;
-		const { runtimeTemplate } = compilation;
-		const url = compilation.getPath(JSON.stringify(filename), {
-			hash: `" + ${RuntimeGlobals.getFullHash}() + "`,
-			hashWithLength: length =>
-				`" + ${RuntimeGlobals.getFullHash}().slice(0, ${length}) + "`,
-			chunk,
-			runtime: chunk.runtime
-		});
-		return Template.asString([
-			`${global} = ${runtimeTemplate.returningFunction(url)};`
-		]);
-	}
+  /**
+   * @returns {string} runtime code
+   */
+  generate() {
+    const { global, filename, compilation, chunk } = this;
+    const { runtimeTemplate } = compilation;
+    const url = compilation.getPath(JSON.stringify(filename), {
+      hash: `" + ${RuntimeGlobals.getFullHash}() + "`,
+      hashWithLength: (length) =>
+        `" + ${RuntimeGlobals.getFullHash}().slice(0, ${length}) + "`,
+      chunk,
+      runtime: chunk.runtime,
+    });
+    return Template.asString([
+      `${global} = ${runtimeTemplate.returningFunction(url)};`,
+    ]);
+  }
 }
 
 module.exports = GetMainFilenameRuntimeModule;

@@ -1,0 +1,74 @@
+{
+  "_args": [
+    [
+      "grunt-directory-to-html@0.2.0",
+      "C:\\Users\\bryan\\Downloads\\File-system"
+    ]
+  ],
+  "_from": "grunt-directory-to-html@0.2.0",
+  "_id": "grunt-directory-to-html@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-V78Ya5kd+LNzJ/wiHJlCO0Hfy28=",
+  "_location": "/grunt-directory-to-html",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "grunt-directory-to-html@0.2.0",
+    "name": "grunt-directory-to-html",
+    "escapedName": "grunt-directory-to-html",
+    "rawSpec": "0.2.0",
+    "saveSpec": null,
+    "fetchSpec": "0.2.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/grunt-directory-to-html/-/grunt-directory-to-html-0.2.0.tgz",
+  "_spec": "0.2.0",
+  "_where": "C:\\Users\\bryan\\Downloads\\File-system",
+  "author": {
+    "name": "Stephen Young",
+    "email": "stephen@stephen-young.me.uk"
+  },
+  "bugs": {
+    "url": "https://github.com/stephendeyoung/grunt-directory-to-html/issues"
+  },
+  "dependencies": {
+    "handlebars": "~1.0.12",
+    "jade": "~0.35.0"
+  },
+  "description": "Generate an html page from a directory structure",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "homepage": "https://github.com/stephendeyoung/grunt-directory-to-html",
+  "keywords": [
+    "gruntplugin"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/stephendeyoung/grunt-directory-to-html/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "name": "grunt-directory-to-html",
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stephendeyoung/grunt-directory-to-html.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "0.2.0"
+}

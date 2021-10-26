@@ -1,5 +1,5 @@
-var path = require('path');
-var fs = require('../../utils/fs');
+var path = require("path");
+var fs = require("../../utils/fs");
 
 /**
     Write a file to the output folder
@@ -10,12 +10,13 @@ var fs = require('../../utils/fs');
     @return {Promise}
 */
 function writeFile(output, filePath, content) {
-    var rootFolder = output.getRoot();
-    filePath = path.join(rootFolder, filePath);
+  var rootFolder = output.getRoot();
+  filePath = path.join(rootFolder, filePath);
 
-    return fs.ensureFile(filePath)
-    .then(function() {
-        return fs.writeFile(filePath, content);
+  return fs
+    .ensureFile(filePath)
+    .then(function () {
+      return fs.writeFile(filePath, content);
     })
     .thenResolve(output);
 }

@@ -1,0 +1,65 @@
+{
+  "_args": [
+    [
+      "sitemap-js-obj@0.0.3",
+      "C:\\Users\\bryan\\Downloads\\File-system"
+    ]
+  ],
+  "_from": "sitemap-js-obj@0.0.3",
+  "_id": "sitemap-js-obj@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-rLljX5dXvK7OAQUeebZZyBnt7ao=",
+  "_location": "/sitemap-js-obj",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "sitemap-js-obj@0.0.3",
+    "name": "sitemap-js-obj",
+    "escapedName": "sitemap-js-obj",
+    "rawSpec": "0.0.3",
+    "saveSpec": null,
+    "fetchSpec": "0.0.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sitemap-js-obj/-/sitemap-js-obj-0.0.3.tgz",
+  "_spec": "0.0.3",
+  "_where": "C:\\Users\\bryan\\Downloads\\File-system",
+  "author": {
+    "name": "Ahmad Rifaii",
+    "email": "ariffmalor@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ariffma/sitemap-js-obj/issues"
+  },
+  "description": "Generate a sitemap javascript object from the folder structure crawling HTML files only.",
+  "devDependencies": {
+    "extfs": "0.0.7",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "homepage": "https://github.com/ariffma/sitemap-js-obj#readme",
+  "keywords": [
+    "sitemap",
+    "javascript",
+    "object",
+    "crawling",
+    "html",
+    "files"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "sitemap-js-obj",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariffma/sitemap-js-obj.git"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "version": "0.0.3"
+}
